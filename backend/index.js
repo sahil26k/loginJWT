@@ -119,7 +119,6 @@ app.get('/employees', async (req, res) => {
     }
   });
   
-  // Delete employee
   app.delete('/employees/:id', async (req, res) => {
     try {
       const deletedEmployee = await Employee.findByIdAndDelete(req.params.id);
