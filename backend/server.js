@@ -13,9 +13,10 @@ mongoose.connect('mongodb+srv://sahil:sahil@flight.vdrclkj.mongodb.net/login', {
 app.use(cors())
 app.use(express.json())
 
-app.get('/', (req, res) => {
-  res.send('Hello and welcome!');
-});
+app.get("/",(req,res) =>{
+  res.setHeader("Access-control-Allow-Credentials","true");
+  res.send("api is running")
+})
 
 app.post('/register', async (req, res) => {
     try {
