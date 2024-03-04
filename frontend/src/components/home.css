@@ -63,9 +63,9 @@ table tbody tr:nth-child(odd) {
     padding: 10px;
     border-bottom: #DFB7E3 solid 1px;
 }
-@media screen and (max-width: 338px) {
+@media screen and (max-width: 370px) {
 .table-wrap{
-    max-width: 300px;
+    max-width: 340px;
 }
 .table, td, th {
     font-size: 10px;
