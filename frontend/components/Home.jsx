@@ -21,7 +21,7 @@ function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/employees');
+      const response = await axios.get('https://login-jwt-api.vercel.app/employees');
       setEmployees(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -30,7 +30,7 @@ function Home() {
 
   const handleDelete = async (_id) => {
     try {
-      await axios.delete(`http://localhost:5000/employees/${_id}`);
+      await axios.delete(`https://login-jwt-api.vercel.app/employees/${_id}`);
       fetchData();
     } catch (error) {
       console.error('Error deleting employee:', error);
@@ -44,7 +44,7 @@ function Home() {
 
   const handleSave = async () => {
     try {
-      await axios.put(`http://localhost:5000/employees/${editableEmployee._id}`, editableEmployee);
+      await axios.put(`https://login-jwt-api.vercel.app/employees/${editableEmployee._id}`, editableEmployee);
       setEditableEmployee(null);
       fetchData(); 
     } catch (error) {
@@ -62,7 +62,7 @@ function Home() {
 
   const handleAddNewEmployee = async () => {
     try {
-      await axios.post('http://localhost:5000/employees', newEmployee);
+      await axios.post('https://login-jwt-api.vercel.app/employees', newEmployee);
       setNewEmployee({
         Employee_id: '',
         Employee_name: '',
