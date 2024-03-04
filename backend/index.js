@@ -12,7 +12,7 @@ mongoose.connect('mongodb+srv://sahil:sahil@flight.vdrclkj.mongodb.net/login', {
 
 app.use(cors(
   {
-    origin: ["https://login-jqjys5q36-sahil26k.vercel.app/"],
+    origin: ["https://login-jwt-pearl.vercel.app/"],
     methods: ["POST","GET"],
     credentials:true
   }
