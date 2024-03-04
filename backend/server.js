@@ -13,6 +13,10 @@ mongoose.connect('mongodb+srv://sahil:sahil@flight.vdrclkj.mongodb.net/login', {
 app.use(cors())
 app.use(express.json())
 
+app.get('/', (req, res) => {
+  res.send('Hello and welcome!');
+});
+
 app.post('/register', async (req, res) => {
     try {
         const newPassword = await bcrypt.hash(req.body.password, 10);
