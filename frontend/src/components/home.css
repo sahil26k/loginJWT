@@ -63,4 +63,27 @@ table tbody tr:nth-child(odd) {
     padding: 10px;
     border-bottom: #DFB7E3 solid 1px;
 }
-
+@media screen and (max-width: 338px) {
+.table-wrap{
+    max-width: 300px;
+}
+.table, td, th {
+    font-size: 10px;
+}
+th, td {
+    padding: 7px;
+    white-space: nowrap;
+}
+.button {
+    padding: 5px 15px 5px 15px; 
+    border-radius: 1px;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+.employee{
+    font-size: 12px;
+}
+.input{
+    padding: 5px;
+}
+}
