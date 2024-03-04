@@ -13,7 +13,7 @@ function Register() {
         event.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/register', {
+            const response = await axios.post('https://login-jwt-api.vercel.app/register', {
                 name,
                 email,
                 password
