@@ -20,7 +20,8 @@ app.use(cors(
 app.use(express.json())
 
 app.get("/",(req,res) =>{
-  res.setHeader("Access-control-Allow-Credentials","true");
+  res.setHeader("Access-Control-Allow-Credentials","true");
+  res.setHeader("Access-Control-Allow-Origin","true");
   res.send("api is running")
 })
 
