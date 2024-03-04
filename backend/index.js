@@ -10,13 +10,7 @@ const Employee = require("./employee")
 
 mongoose.connect('mongodb+srv://sahil:sahil@flight.vdrclkj.mongodb.net/login', { useNewUrlParser: true })
 
-app.use(cors(
-  {
-    origin: ["https://login-jwt-pearl.vercel.app/"],
-    methods: ["POST","GET"],
-    credentials:true
-  }
-))
+app.use(cors())
 app.use(express.json())
 
 app.get("/",(req,res) =>{
